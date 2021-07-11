@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://fonts/plex_mono_20.tres" type="DynamicFont" id=1]
+[ext_resource path="res://fonts/plex_mono_28.tres" type="DynamicFont" id=2]
+[ext_resource path="res://InputResponse.gd" type="Script" id=3]
+
+[node name="InputResponse" type="VBoxContainer"]
+margin_right = 984.0
+margin_bottom = 68.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InputHisoty" type="Label" parent="."]
+margin_right = 984.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 0, 15 )
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.419608, 0.419608, 0.419608, 1 )
+text = " > This is user input"
+
+[node name="ResponseHistory" type="Label" parent="."]
+margin_top = 31.0
+margin_right = 984.0
+margin_bottom = 68.0
+custom_fonts/font = ExtResource( 2 )
+text = "This is game output"
